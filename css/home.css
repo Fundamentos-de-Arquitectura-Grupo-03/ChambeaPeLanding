@@ -114,3 +114,68 @@ header .btn-register:hover {
     transition: .25s;
     background: var(--main-black);
 }
+
+/* MAIN */
+
+.hero {
+    display: flex;
+    flex-flow: wrap;
+    height: calc(100vh - 5.625rem);
+    justify-content: space-evenly;
+    align-items: center;
+    flex-shrink: 0;
+
+    background-color: var(--main-pastel-orange);
+    color: #000;
+}
+
+.hero img {
+    width: auto;
+    height: inherit;
+}
+
+.wrapper-chambeape {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.wrapper-chambeape img {
+    max-width: 35rem;
+    height: auto;
+}
+
+.wrapper-chambeape h2 {
+    max-width: 39.5625rem;
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.wrapper-chambeape a {
+    display: flex;
+    width: 25rem;
+    padding: 0.625rem 0rem;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.625rem;
+    background: var(--main-primary);
+    color: white;
+
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+.wrapper-chambeape a:hover {
+    transition: .25s;
+    background: var(--main-black);
+}
