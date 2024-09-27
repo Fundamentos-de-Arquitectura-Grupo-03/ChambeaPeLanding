@@ -292,3 +292,88 @@ header .btn-register:hover {
     font-weight: 700;
     line-height: normal;
 }
+
+
+.discover {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discover .wrapper-discover {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6.25rem 2rem;
+
+    margin-top: 6.25rem;
+
+}
+
+.text-discover {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    width: 100%;
+}
+
+.text-discover div {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.text-discover div:nth-last-child(odd) {
+    gap: 1rem;
+    padding: 0 2rem 0 0;
+}
+
+.text-discover div:nth-last-child(even) {
+    gap: 1rem;
+    padding: 0 0 0 2rem;
+}
+
+.wrapper-discover img {
+    display: block;
+    max-width: 30rem;
+    height: 30rem;
+
+    object-fit: cover;
+}
+
+.discover .wrapper-discover .text-discover h3 {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.125rem;
+}
+
+.discover .wrapper-discover .text-discover p {
+    max-width: 50rem;
+
+    font-size: 1.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.05438rem;
+}
+
+.discover .wrapper-discover .first {
+    background-color: var(--main-pastel-blue);
+}
+
+.discover .wrapper-discover .second {
+    background-color: var(--main-tan);
+}
+
+.discover .wrapper-discover .third {
+    background-color: var(--main-pastel-pink);
+}
