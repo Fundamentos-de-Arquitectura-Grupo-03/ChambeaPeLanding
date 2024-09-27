@@ -1,0 +1,698 @@
+@import url('./reset.css');
+@import url('./footer.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --main-black: #000;
+    --main-primary: #f1a636;
+    --main-background: #fff;
+
+    --main-pastel-orange: #f9f2dd;
+    --main-pastel-pink: #F4E8EC;
+    --main-pastel-brown: #f6ebeb;
+    --main-pastel-blue: #e6ebee;
+    --main-tan: #e8e7e2;
+
+    --button-color: #F1364C;
+    --footer-color: #000;
+
+    --shadow-orange: 0px 0px 16px 0px rgba(241, 166, 54, 0.35);
+}
+
+body {
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+#up {
+    display: inline-block;
+    position: fixed;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    bottom: 5rem;
+    right: 5rem;
+
+    width: 3.75rem;
+    height: 3.75rem;
+    z-index: 10;
+
+    transition: .25s linear;
+}
+
+#up svg {
+    width: inherit;
+    height: auto;
+    fill: var(--main-primary);
+}
+
+#up:hover {
+    scale: 1.2;
+}
+
+/* Header */
+header {
+    background-color: var(--main-background);
+    width: 100%;
+    height: 5.625rem;
+
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+header .icon svg {
+    width: 50px;
+    height: auto;
+}
+
+header ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+header li a {
+    padding: 1rem;
+    color: black;
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+header nav a:hover {
+    transition: .25s linear;
+    border-bottom: 5px var(--main-primary) solid;
+}
+
+header button {
+    display: none;
+}
+
+header svg {
+    width: 2em;
+    height: 2em;
+    fill: white;
+}
+
+header .btn-register {
+    padding: 0.5rem 3rem;
+    margin: 0;
+
+    border-radius: 1rem;
+    color: white;
+    background: var(--main-primary);
+}
+
+header .btn-register:hover {
+    border: none;
+    transition: .25s;
+    background: var(--main-black);
+}
+
+/* MAIN */
+
+.hero {
+    display: flex;
+    flex-flow: wrap;
+    height: calc(100vh - 5.625rem);
+    justify-content: space-evenly;
+    align-items: center;
+    flex-shrink: 0;
+
+    background-color: var(--main-pastel-orange);
+    color: #000;
+}
+
+.hero img {
+    width: auto;
+    height: inherit;
+}
+
+.wrapper-chambeape {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.wrapper-chambeape img {
+    max-width: 35rem;
+    height: auto;
+}
+
+.wrapper-chambeape h2 {
+    max-width: 39.5625rem;
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.wrapper-chambeape a {
+    display: flex;
+    width: 25rem;
+    padding: 0.625rem 0rem;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.625rem;
+    background: var(--main-primary);
+    color: white;
+
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+.wrapper-chambeape a:hover {
+    transition: .25s;
+    background: var(--main-black);
+}
+
+.about {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2 {
+    color: var(--main-primary);
+    margin: 6.25rem 0 1rem 0;
+}
+
+.h2 {
+    text-align: center;
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.225rem;
+}
+
+.about .wrapper-about {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.25rem;
+    padding: 1.25rem;
+
+    border-radius: 0.625rem;
+    background: var(--main-background);
+    box-shadow: var(--shadow-orange);
+}
+
+.about .wrapper-about img {
+    display: block;
+    max-width: 16.25rem;
+}
+
+.about .wrapper-about p {
+    max-width: 42rem;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: .1rem;
+}
+
+.employer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.h2+p {
+    width: 45rem;
+
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.04375rem;
+}
+
+.employer .wrapper-employer {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 6.25rem;
+    gap: 1.875rem 2.5rem;
+}
+
+.wrapper-employer div {
+    display: flex;
+    padding: 3.125rem 1.875rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+
+    border-radius: 1.875rem;
+}
+
+.wrapper-employer .pink {
+    background-color: var(--main-pastel-pink);
+}
+
+.wrapper-employer .blue {
+    background-color: var(--main-pastel-blue);
+}
+
+.wrapper-employer .tan {
+    background-color: var(--main-tan);
+}
+
+.wrapper-employer img {
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 15.5rem;
+    height: 15.5rem;
+}
+
+.employer .wrapper-employer p {
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.discover {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discover .wrapper-discover {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6.25rem 2rem;
+
+    margin-top: 6.25rem;
+
+}
+
+.text-discover {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    width: 100%;
+}
+
+.text-discover div {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.text-discover div:nth-last-child(odd) {
+    gap: 1rem;
+    padding: 0 2rem 0 0;
+}
+
+.text-discover div:nth-last-child(even) {
+    gap: 1rem;
+    padding: 0 0 0 2rem;
+}
+
+.wrapper-discover img {
+    display: block;
+    max-width: 30rem;
+    height: 30rem;
+
+    object-fit: cover;
+}
+
+.discover .wrapper-discover .text-discover h3 {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.125rem;
+}
+
+.discover .wrapper-discover .text-discover p {
+    max-width: 50rem;
+
+    font-size: 1.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.05438rem;
+}
+
+.discover .wrapper-discover .first {
+    background-color: var(--main-pastel-blue);
+}
+
+.discover .wrapper-discover .second {
+    background-color: var(--main-tan);
+}
+
+.discover .wrapper-discover .third {
+    background-color: var(--main-pastel-pink);
+}
+
+@media (max-width:1328px) {
+    .hero img {
+        max-width: 27rem;
+    }
+
+    .wrapper-chambeape h2 {
+        width: 26.875rem;
+    }
+}
+
+@media screen and (max-width:960px) {
+    #up {
+        bottom: 3rem;
+        right: 3rem;
+
+        width: 3rem;
+        height: 3rem;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 0 1.25rem;
+    }
+
+    .nav {
+        display: none;
+    }
+    .hero img {
+        max-width: 16rem;
+    }
+
+    .hero {
+        flex-wrap: nowrap;
+        flex-direction: column-reverse;
+    }
+
+    .wrapper-chambeape {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: space-around;
+        padding-top: 2.5rem;
+        gap: 1.8rem;
+    }
+
+    .wrapper-chambeape h2 {
+        font-size: 1.5rem;
+    }
+
+    .wrapper-chambeape a {
+        padding: 0.5rem 0rem;
+        font-size: 1rem;
+    }
+
+    .about .wrapper-about {
+        flex-flow: column-reverse;
+        gap: 1.25rem;
+    }
+
+    .about .wrapper-about img {
+        max-width: 12rem;
+    }
+
+    .about .wrapper-about p {
+        max-width: 20rem;
+        font-size: 1.25rem;
+        letter-spacing: 0.0375rem;
+        text-align: center;
+    }
+
+    .h2 {
+        text-align: center;
+        font-size: 3.5rem;
+        font-style: normal;
+        line-height: normal;
+    }
+
+    .h2+p {
+        width: 20.375rem;
+    }
+
+    .employer .wrapper-employer {
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .wrapper-employer div {
+        padding: 1.25rem 0.625rem;
+        gap: 1.25rem;
+        border-radius: 0.625rem;
+    }
+
+    .wrapper-employer img {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    .employer .wrapper-employer p {
+        width: 8.75rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        letter-spacing: 0.0625rem;
+    }
+
+    .text-discover {
+        gap: 0rem;
+        width: 100%;
+    }
+
+    .discover .wrapper-discover .text-discover h3 {
+        font-size: 2rem;
+    }
+
+    .discover .wrapper-discover .text-discover p {
+        font-size: 1.2rem;
+    }
+
+    .wrapper-discover img {
+        display: block;
+        max-width: 20rem;
+        height: 20rem;
+
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width:768px) {
+    #up {
+        bottom: 2rem;
+        right: 1rem;
+
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-style: normal;
+        line-height: normal;
+    }
+
+    .discover .wrapper-discover {
+        gap: 1rem;
+
+        margin-top: 2rem;
+
+    }
+
+    .text-discover {
+        width: 100%;
+        flex-flow: column;
+        margin-top: 6.25rem;
+
+
+        padding: 1.25rem 0rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.625rem;
+    }
+
+    .text-discover:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .text-discover div {
+        align-items: center;
+    }
+
+    .text-discover div:nth-last-child(odd) {
+        padding: 1rem;
+    }
+
+    .text-discover div:nth-last-child(even) {
+        padding: 1rem;
+    }
+
+    .text-discover div p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .hero img {
+        max-width: 12rem;
+    }
+
+    .wrapper-chambeape h2 {
+        width: 20rem;
+        font-size: 1.25rem;
+    }
+
+    .wrapper-chambeape a {
+        width: 15rem;
+        padding: 0.5rem 0rem;
+        font-size: 1rem;
+    }
+
+    .about .wrapper-about img {
+        max-width: 10rem;
+    }
+
+    .about .wrapper-about p {
+        max-width: 15rem;
+        font-size: 1rem;
+        letter-spacing: 0.0375rem;
+        text-align: center;
+    }
+
+    .h2 {
+        text-align: center;
+        font-size: 2rem;
+        font-style: normal;
+        line-height: normal;
+    }
+
+    .h2+p {
+        width: 15rem;
+    }
+
+    .employer .wrapper-employer img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .employer .wrapper-employer p {
+        width: 6.25rem;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.0625rem;
+    }
+
+    .discover .wrapper-discover .text-discover h3 {
+        font-size: 1.5rem;
+    }
+
+    .discover .wrapper-discover .text-discover p {
+        font-size: 1rem;
+    }
+
+    .wrapper-discover img {
+        display: block;
+        max-width: 15rem;
+        height: 15rem;
+
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 320px) {
+    .hero img {
+        max-width: 10rem;
+    }
+
+    .wrapper-chambeape h2 {
+        width: 15rem;
+        font-size: 1rem;
+    }
+
+    .wrapper-chambeape a {
+        padding: 0.5rem 0rem;
+        font-size: 0.875rem;
+    }
+
+    .about .wrapper-about img {
+        max-width: 8rem;
+    }
+
+    .about .wrapper-about p {
+        max-width: 12rem;
+        font-size: 0.875rem;
+        letter-spacing: 0.0375rem;
+        text-align: center;
+    }
+
+    .h2 {
+        text-align: center;
+        font-size: 1.5rem;
+        font-style: normal;
+        line-height: normal;
+    }
+
+    .h2+p {
+        width: 10rem;
+    }
+
+    .employer .wrapper-employer img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .employer .wrapper-employer p {
+        width: 5rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        letter-spacing: 0.0625rem;
+    }
+
+    .discover .wrapper-discover .text-discover h3 {
+        font-size: 1.25rem;
+    }
+
+    .discover .wrapper-discover .text-discover p {
+        font-size: 0.875rem;
+    }
+
+    .wrapper-discover img {
+        display: block;
+        max-width: 10rem;
+        height: 10rem;
+
+        object-fit: cover;
+    }
+}
