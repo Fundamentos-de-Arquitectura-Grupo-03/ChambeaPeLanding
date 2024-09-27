@@ -1,4 +1,5 @@
 @import url('./reset.css');
+@import url('./footer.css');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 :root {
@@ -376,4 +377,322 @@ header .btn-register:hover {
 
 .discover .wrapper-discover .third {
     background-color: var(--main-pastel-pink);
+}
+
+@media (max-width:1328px) {
+    .hero img {
+        max-width: 27rem;
+    }
+
+    .wrapper-chambeape h2 {
+        width: 26.875rem;
+    }
+}
+
+@media screen and (max-width:960px) {
+    #up {
+        bottom: 3rem;
+        right: 3rem;
+
+        width: 3rem;
+        height: 3rem;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 0 1.25rem;
+    }
+
+    .nav {
+        display: none;
+    }
+    .hero img {
+        max-width: 16rem;
+    }
+
+    .hero {
+        flex-wrap: nowrap;
+        flex-direction: column-reverse;
+    }
+
+    .wrapper-chambeape {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: space-around;
+        padding-top: 2.5rem;
+        gap: 1.8rem;
+    }
+
+    .wrapper-chambeape h2 {
+        font-size: 1.5rem;
+    }
+
+    .wrapper-chambeape a {
+        padding: 0.5rem 0rem;
+        font-size: 1rem;
+    }
+
+    .about .wrapper-about {
+        flex-flow: column-reverse;
+        gap: 1.25rem;
+    }
+
+    .about .wrapper-about img {
+        max-width: 12rem;
+    }
+
+    .about .wrapper-about p {
+        max-width: 20rem;
+        font-size: 1.25rem;
+        letter-spacing: 0.0375rem;
+        text-align: center;
+    }
+
+    .h2 {
+        text-align: center;
+        font-size: 3.5rem;
+        font-style: normal;
+        line-height: normal;
+    }
+
+    .h2+p {
+        width: 20.375rem;
+    }
+
+    .employer .wrapper-employer {
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .wrapper-employer div {
+        padding: 1.25rem 0.625rem;
+        gap: 1.25rem;
+        border-radius: 0.625rem;
+    }
+
+    .wrapper-employer img {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    .employer .wrapper-employer p {
+        width: 8.75rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        letter-spacing: 0.0625rem;
+    }
+
+    .text-discover {
+        gap: 0rem;
+        width: 100%;
+    }
+
+    .discover .wrapper-discover .text-discover h3 {
+        font-size: 2rem;
+    }
+
+    .discover .wrapper-discover .text-discover p {
+        font-size: 1.2rem;
+    }
+
+    .wrapper-discover img {
+        display: block;
+        max-width: 20rem;
+        height: 20rem;
+
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width:768px) {
+    #up {
+        bottom: 2rem;
+        right: 1rem;
+
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-style: normal;
+        line-height: normal;
+    }
+
+    .discover .wrapper-discover {
+        gap: 1rem;
+
+        margin-top: 2rem;
+
+    }
+
+    .text-discover {
+        width: 100%;
+        flex-flow: column;
+        margin-top: 6.25rem;
+
+
+        padding: 1.25rem 0rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.625rem;
+    }
+
+    .text-discover:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .text-discover div {
+        align-items: center;
+    }
+
+    .text-discover div:nth-last-child(odd) {
+        padding: 1rem;
+    }
+
+    .text-discover div:nth-last-child(even) {
+        padding: 1rem;
+    }
+
+    .text-discover div p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .hero img {
+        max-width: 12rem;
+    }
+
+    .wrapper-chambeape h2 {
+        width: 20rem;
+        font-size: 1.25rem;
+    }
+
+    .wrapper-chambeape a {
+        width: 15rem;
+        padding: 0.5rem 0rem;
+        font-size: 1rem;
+    }
+
+    .about .wrapper-about img {
+        max-width: 10rem;
+    }
+
+    .about .wrapper-about p {
+        max-width: 15rem;
+        font-size: 1rem;
+        letter-spacing: 0.0375rem;
+        text-align: center;
+    }
+
+    .h2 {
+        text-align: center;
+        font-size: 2rem;
+        font-style: normal;
+        line-height: normal;
+    }
+
+    .h2+p {
+        width: 15rem;
+    }
+
+    .employer .wrapper-employer img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .employer .wrapper-employer p {
+        width: 6.25rem;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.0625rem;
+    }
+
+    .discover .wrapper-discover .text-discover h3 {
+        font-size: 1.5rem;
+    }
+
+    .discover .wrapper-discover .text-discover p {
+        font-size: 1rem;
+    }
+
+    .wrapper-discover img {
+        display: block;
+        max-width: 15rem;
+        height: 15rem;
+
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 320px) {
+    .hero img {
+        max-width: 10rem;
+    }
+
+    .wrapper-chambeape h2 {
+        width: 15rem;
+        font-size: 1rem;
+    }
+
+    .wrapper-chambeape a {
+        padding: 0.5rem 0rem;
+        font-size: 0.875rem;
+    }
+
+    .about .wrapper-about img {
+        max-width: 8rem;
+    }
+
+    .about .wrapper-about p {
+        max-width: 12rem;
+        font-size: 0.875rem;
+        letter-spacing: 0.0375rem;
+        text-align: center;
+    }
+
+    .h2 {
+        text-align: center;
+        font-size: 1.5rem;
+        font-style: normal;
+        line-height: normal;
+    }
+
+    .h2+p {
+        width: 10rem;
+    }
+
+    .employer .wrapper-employer img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .employer .wrapper-employer p {
+        width: 5rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        letter-spacing: 0.0625rem;
+    }
+
+    .discover .wrapper-discover .text-discover h3 {
+        font-size: 1.25rem;
+    }
+
+    .discover .wrapper-discover .text-discover p {
+        font-size: 0.875rem;
+    }
+
+    .wrapper-discover img {
+        display: block;
+        max-width: 10rem;
+        height: 10rem;
+
+        object-fit: cover;
+    }
 }
